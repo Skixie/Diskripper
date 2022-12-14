@@ -1,7 +1,7 @@
 # Diskripper
 ## Analyze and extract files from an image file
 
-[![N|Solid](https://github.com/Skixie/Diskripper/blob/main/diskripper.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://github.com/Skixie/Diskripper/blob/main/diskripper.png)]
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
