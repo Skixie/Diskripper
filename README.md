@@ -43,5 +43,6 @@ Example:
     ```sh
     diskripper.exe --command sam --source "C:\VM\Win10\Win10.vmdk"
     ```
-    
+## Credits
+The base of this tool has been written by [leftp](https://github.com/leftp). The original tool can be found [here](https://github.com/leftp/VmdkReader). When I tried to use the original tool it didn't work, so I fixed it and added the previously mentioned functions.
 
