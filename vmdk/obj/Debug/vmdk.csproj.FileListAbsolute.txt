@@ -1,0 +1,14 @@
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\bin\Debug\DiscUtils.Core.dll
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\bin\Debug\DiscUtils.Ntfs.dll
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\bin\Debug\DiscUtils.Streams.dll
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\bin\Debug\DiscUtils.Vhd.dll
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\bin\Debug\DiscUtils.Vmdk.dll
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\obj\Debug\vmdk.csproj.AssemblyReference.cache
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\obj\Debug\vmdk.csproj.SuggestedBindingRedirects.cache
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\obj\Debug\vmdk.csproj.CoreCompileInputs.cache
+C:\Users\Abdelhamid\Source\Repos\VmdkReader_Herschreven\vmdk\obj\Debug\vmdk.csproj.CopyComplete
+C:\Users\Abdelhamid\source\repos\VmdkReader_Herschreven\vmdk\bin\Debug\diskripper.exe.config
+C:\Users\Abdelhamid\source\repos\VmdkReader_Herschreven\vmdk\bin\Debug\diskripper.exe
+C:\Users\Abdelhamid\source\repos\VmdkReader_Herschreven\vmdk\bin\Debug\diskripper.pdb
+C:\Users\Abdelhamid\source\repos\VmdkReader_Herschreven\vmdk\obj\Debug\diskripper.exe
+C:\Users\Abdelhamid\source\repos\VmdkReader_Herschreven\vmdk\obj\Debug\diskripper.pdb
