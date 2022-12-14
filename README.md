@@ -23,7 +23,7 @@ Example:
     ```sh
     diskripper --command dir --source "C:\VM\Win10\Win10.vmdk" --directory
     ```
-- ``--command pf``, which can show the contents of the directories Program Files and Program FIles (x86) in just one command.
+- ``--command pf``, which can show the contents of the directories Program Files and Program FIles (x86) with one command.
 Example:
     ```sh
     diskripper.exe --command pf --source "C:\VM\Win10\Win10.vmdk"
