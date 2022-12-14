@@ -16,7 +16,7 @@ Diskripper is a tool which can analyze and extract images from an image file (to
 - Copy the SAM, SYSTEM and SECURITY hive files in one command
 
 ## Usage
-Diskripper can be used with te following commands
+Diskripper can be used with the following commands
 
 - ``--command dir``, which can make a directory listing of the provided image file.<br>
 Example:
