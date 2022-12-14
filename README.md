@@ -18,27 +18,27 @@ Diskripper is a tool which can analyze and extract images from an image file (to
 ## Usage
 Diskripper can be used with te following commands
 
-- --command dir, which can make a directory listing of the provided image file.
+- ``--command dir``, which can make a directory listing of the provided image file.
 Example:
     ```sh
     diskripper --command dir --source "C:\VM\Win10\Win10.vmdk" --directory
     ```
-- --command pf, which can show the contents of the directories Program Files and Program FIles (x86) in just one command.
+- ``--command pf``, which can show the contents of the directories Program Files and Program FIles (x86) in just one command.
 Example:
     ```sh
     diskripper.exe --command pf --source "C:\VM\Win10\Win10.vmdk"
     ```
-- --command cp, which can copy a specified file from the provided image. A destination has to be provided.
+- ``--command cp``, which can copy a specified file from the provided image. A destination has to be provided.
 Example:
     ```sh
     diskripper.exe --command cp --source "C:\VM\Win10\Win10.vmdk" --file2copy \Windows\System32\calc.exe --destination "C:\Users\Publicalc.exe"
     ```
-- --command cpfile, which can copy files that are specified in a provided txt file.
+- ``--command cpfile``, which can copy files that are specified in a provided txt file.
 Example:
     ```sh
     diskripper.exe --command cpfile --source "C:\VM\Win10\Win10.vmdk" --file "C:\Users\Public\\filelist.txt" --destinationdir "C:\Users\Public\Output"
     ```
-- --command sam, which will copy the SAM, SYSTEM and SECURITY files, that can be used to extract password hashes to crack them.
+- ``--command sam``, which will copy the SAM, SYSTEM and SECURITY files, that can be used to extract password hashes to crack them.
 Example:
     ```sh
     diskripper.exe --command sam --source "C:\VM\Win10\Win10.vmdk"
