@@ -1,24 +1,47 @@
 # Diskripper
-## Analyze and extract files from image files
+## Analyze and extract files from an image file
 
 [![N|Solid](https://github.com/Skixie/Diskripper/blob/main/diskripper.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
-
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+Diskripper is a tool which can analyze and extract images from an image file (tool supports currently only vmdk). What makes this tool special, is the fact that it can do this without needing to download the whole image file. This also means that Diskripper accepts network paths as to where the image file is located. During pentests for example, you could find an image file on a share that could be as big as a couple hunderd gigabytes. The problem with this is that downloading the image file takes time and storage, both of which that can be quite scarce. This tool has been made during an internship to solve that problem.
 
 ## Features
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+- Output a directory listing of the image file
+- Output the contents of Program Files and Program Files (x86) directories with just one command
+- Copy a file from the image file
+- Copy file(s) from a provided txt file with the full paths of the desired files to be copied
+- Copy the SAM, SYSTEM and SECURITY hive files in one command
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
+## Usage
+Diskripper can be used with te following commands
+
+- --command dir, which can make a directory listing of the provided image file.
+Example:
+    ```sh
+    diskripper --command dir --source "C:\VM\Win10\Win10.vmdk" --directory
+    ```
+- --command pf, which can show the contents of the directories Program Files and Program FIles (x86) in just one command.
+Example:
+    ```sh
+    diskripper.exe --command pf --source "C:\VM\Win10\Win10.vmdk"
+    ```
+- --command cp, which can copy a specified file from the provided image. A destination has to be provided.
+Example:
+    ```sh
+    diskripper.exe --command cp --source "C:\VM\Win10\Win10.vmdk" --file2copy \Windows\System32\calc.exe --destination "C:\Users\Publicalc.exe"
+    ```
+- --command cpfile, which can copy files that are specified in a provided txt file.
+Example:
+    ```sh
+    diskripper.exe --command cpfile --source "C:\VM\Win10\Win10.vmdk" --file "C:\Users\Public\\filelist.txt" --destinationdir "C:\Users\Public\Output"
+    ```
+- --command sam, which will copy the SAM, SYSTEM and SECURITY files, that can be used to extract password hashes to crack them.
+Example:
+    ```sh
+    diskripper.exe --command sam --source "C:\VM\Win10\Win10.vmdk"
+    ```
+    
+
