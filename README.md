@@ -46,5 +46,5 @@ Example:
 ###### Credits
 The base of this tool has been written by [leftp](https://github.com/leftp). The original tool can be found [here](https://github.com/leftp/VmdkReader). When I tried to use the original tool it initially didn't work, so I fixed it and added the previously mentioned functions.
 
-Code is pretty messy, because I can't program at all, but it works ¯\_(ツ)_/¯
+Code is pretty messy, because I can't program at all, but it works ¯\\_(ツ)_/¯
 
