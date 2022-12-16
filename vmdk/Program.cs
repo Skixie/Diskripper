@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.IO.MemoryMappedFiles;
 using DiscUtils;
@@ -253,7 +253,11 @@ namespace vmdk
 
                 else
                 {
-                    Console.WriteLine("Command not found. Please check your command or type '--command help' to see the available commands");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("");
+                    Console.WriteLine("Command not found or completed. Please check your command or check if you have all the required arguments.");
+                    Console.WriteLine("Type '--command help' to see the available commands if you're stuck.");
+                    Console.ResetColor();
                 }
             }
             else
