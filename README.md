@@ -5,7 +5,7 @@
 
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
-Diskripper is a tool which can analyze and extract images from an image file (tool supports currently only vmdk). What makes this tool special, is the fact that it can do this without needing to download the whole image file. This also means that Diskripper accepts network paths as to where the image file is located. During pentests for example, you could find an image file on a share that could be as big as a couple hunderd gigabytes. The problem with this is that downloading the image file takes time and storage, both of which that can be quite scarce. This tool has been made during an internship to solve that problem.
+Diskripper is a tool which can analyze and extract images from an image file (tool supports currently only vmdk). What makes this tool special, is the fact that it can do this without needing to download the whole image file. This also means that Diskripper accepts network paths as to where the image file is located. During pentests for example, you could find an image file on a share that could be as big as a couple hunderd gigabytes. The problem with this is that downloading the image file takes time and storage, both of which that can be quite limited. This tool has been made during an internship to solve that problem.
 
 ## Features
 
