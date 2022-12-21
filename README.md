@@ -9,6 +9,7 @@ Diskripper is a tool which can analyze and extract images from an image file (to
 
 ## Features
 
+- Check whether the given vmdk file is encrypted with Bitlocker or not
 - Output a directory listing of the image file
 - Output the contents of Program Files and Program Files (x86) directories with just one command
 - Copy a file from the image file
