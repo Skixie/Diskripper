@@ -31,7 +31,7 @@ Example:
 - ``--command cp``, which can copy a specified file from the provided image. A destination has to be provided.<br>
 Example:
     ```sh
-    diskripper.exe --command cp --source "C:\VM\Win10\Win10.vmdk" --file2copy \Windows\System32\calc.exe --destination "C:\Users\Publicalc.exe"
+    diskripper.exe --command cp --source "C:\VM\Win10\Win10.vmdk" --file2copy \Windows\System32\calc.exe --destination "C:\Users\Public\calc.exe"
     ```
 - ``--command cpfile``, which can copy files that are specified in a provided txt file.<br>
 Example:
