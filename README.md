@@ -51,5 +51,5 @@ NOTE:
 Diskripper has been tested with a Windows 10 vmdk file that has been created in VMware. Other disk file formats are currently not yet supported. Use at your own risk!
 
 Code is pretty messy, because I can't program at all, but I tried to make it as 'readable' as possible and it works
-¯\\_(ツ)_/¯
+¯\\__(ツ)__/¯
 
