@@ -217,35 +217,6 @@ namespace vmdk
 
                 }
 
-                //// Command om inhoud van bestand uit te lezen
-                //else if (command.ToLower() == "type" && GetArgument(args, "--source") != null)
-                //{
-                //    var diskimagepath = GetArgument(args, "--source");
-                //    var directorypath = ("\\Program Files");
-                //    try
-                //    {
-                //        GetDirListing(diskimagepath, directorypath);
-                //    }
-                //    catch (Exception ex)
-                //    {
-                //        Console.WriteLine("\r\n [!] An exception occured: {0}", ex);
-                //        Console.WriteLine(ex);
-                //    }
-
-                //    directorypath = ("\\Program Files (x86)");
-
-                //    try
-                //    {
-                //        GetDirListing(diskimagepath, directorypath);
-                //    }
-                //    catch (Exception ex)
-                //    {
-                //        Console.WriteLine("\r\n [!] An exception occured: {0}", ex);
-                //        Console.WriteLine(ex);
-                //    }
-
-                //}
-
                 else if (command.ToLower() == "help")
                 {
                    GetHelp();
@@ -306,10 +277,6 @@ namespace vmdk
                 VolumeInfo volInfo = null;
                 foreach (var physVol in volMgr.GetPhysicalVolumes())
                 {
-                    //for (int i = 0; i < vhdx.Partitions.Count; i++)
-                    //{
-                    //    Console.WriteLine("Partition {0}", i);
-                    //}
                     isBitlocker(physVol);
                     if (!string.IsNullOrEmpty(physVol.Identity))
                     {
