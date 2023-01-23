@@ -24,8 +24,9 @@ namespace vmdk
 ( (_| || ||___ ||  _ ( | |    | || |_| || |_| || ____|| |    
  \____||_|(___/ |_| \_)|_|    |_||  __/ |  __/ |_____)|_|    
                                  |_|    |_| 
-                                            Version: 0.2                                                                
+                                            Version: 1.0                                                             
                                             Made By: Abdelhamid Jami
+                                       Organization: HackDefense
                                              GitHub: Skixie";
             
             Console.ForegroundColor = ConsoleColor.Red;
@@ -33,7 +34,7 @@ namespace vmdk
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Usage:");
-            Console.WriteLine("       diskripper.exe --command [type] --source [C:\\..\\..] --action [action]\n");
+            Console.WriteLine("       diskripper.exe --command [type] --source [C:\\..\\..]\n");
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("[?] Command: dir - Will output a directory listing of the provided folder");
@@ -60,7 +61,8 @@ namespace vmdk
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("[?] Command: sam - Will extract the SAM, SECURITY and SYSTEM files from given image file");
             Console.ResetColor();
-            Console.WriteLine("      --source: The source of where the image file is stored. Network paths are also accepted\n");
+            Console.WriteLine("      --source: The source of where the image file is stored. Network paths are also accepted");
+            Console.WriteLine("      --destinationdir: Specify in which directory you want the files to be saved\n");
         }
 
         // Argumenten aanmaken
@@ -420,11 +422,9 @@ namespace vmdk
                                     }
                                 }
                             }
-
                         }
                     }
                 }
-
             }
         }
     }
