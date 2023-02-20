@@ -65,7 +65,7 @@ namespace vmdk
             Console.WriteLine("      --destinationdir: Specify in which directory you want the files to be saved\n");
         }
 
-        // Argumenten aanmaken
+        // Making the arguments
         public static string GetArgument(IEnumerable<string> args, string option)
             => args.SkipWhile(i => i != option).Skip(1).Take(1).FirstOrDefault();
 
@@ -79,7 +79,7 @@ namespace vmdk
 
             if (args.Length != 0 && !string.IsNullOrEmpty(GetArgument(args, "--command")))
             {
-                // Command voor directory listing
+                // Command for the directory listing
                 string command = GetArgument(args, "--command");
                 if (command.ToLower() == "dir" && GetArgument(args, "--source") != null)
                 {
@@ -97,7 +97,7 @@ namespace vmdk
 
                 }
                 
-                // Command voor kopieren van een file
+                // Command for copying a file
                 else if (command.ToLower() == "cp" && GetArgument(args, "--source") != null &&
                          GetArgument(args, "--file2copy") != null && GetArgument(args, "--destination") != null)
                 {
@@ -116,7 +116,7 @@ namespace vmdk
                     }
                 }
 
-                // Command voor kopieren van bestanden die in een .txt file worden meegegeven
+                // Command for copying multiple files that are stored within a .txt file
                 else if (command.ToLower() == "cpfile" && GetArgument(args, "--source") != null 
                     && GetArgument(args, "--file") != null && GetArgument(args, "--destinationdir") != null )
                 {
@@ -142,7 +142,7 @@ namespace vmdk
 
                 }
                 
-                // Command om Program Files en Program Files (x86) te listen
+                // Command to list Program Files and Program Files (x86) directory
                 else if (command.ToLower() == "pf" && GetArgument(args, "--source") != null)
                 {
                     var diskimagepath = GetArgument(args, "--source");
@@ -171,7 +171,7 @@ namespace vmdk
 
                 }
 
-                // Command voor kopieren van SAM
+                // Command to copy the SAM database
                 else if (command.ToLower() == "sam" && GetArgument(args, "--source") != null && GetArgument(args, "--destinationdir") != null)
                 {
                     var diskimagepath = GetArgument(args, "--source");
@@ -239,7 +239,7 @@ namespace vmdk
             }
         }
 
-        // Methode om te controleren of image bestand versleuteld is met Bitlocker
+        // Method to check whether the disk image is encrypted with BitLocker
         public static bool isBitlocker(PhysicalVolumeInfo volume)
         {
             byte[] buffer = new byte[16];
@@ -263,7 +263,7 @@ namespace vmdk
             return false;
         }
 
-        // Methode om het Directory Listing te krijgen
+        // Method to list a directory
         public static void GetDirListing(string DiskPath, string directory)
         {
             if (File.Exists(DiskPath))
@@ -272,7 +272,7 @@ namespace vmdk
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("[INFO] Multiple partitions have been detected");
                 Console.ResetColor();
-                // VMDK bestand openen en checken hoeveel partities er zijn 
+                // VMDK bestand openen en checken hoeveel partities er zijn
                 VolumeManager volMgr = new VolumeManager();
                 VirtualDisk vhdx = VirtualDisk.OpenDisk(DiskPath, FileAccess.Read);
                 volMgr.AddDisk(vhdx);
