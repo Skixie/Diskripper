@@ -5,7 +5,7 @@
 
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
-Diskripper is a tool which can analyze and extract files from a disk file (currently supports only vmdk). What makes this tool special, is the fact that it can do this without needing to download the whole disk file. This also means that Diskripper accepts network paths as to where the disk file is located. During pentests for example, you could find a disk file on a share that could be as big as a couple hunderd gigabytes. The challenge with this is that downloading the disk file takes time and storage, both of which that can be quite limited. This tool has been made during an internship to solve that problem.
+Diskripper is a tool which can analyze and extract files from a disk file (currently supports only vmdk). What makes this tool special, is the fact that it can do this without needing to download the whole disk file. This also means that Diskripper accepts network paths as to where the disk file is located. During pentests for example, you could find a disk file on a share that could be as big as a couple hunderd gigabytes. The challenge with this is that downloading the disk file takes time and storage, both of which that can be quite limited when performing a pentest. This tool has been made during an internship to solve that problem.
 
 ## Features
 
